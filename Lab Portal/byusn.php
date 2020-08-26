@@ -1,0 +1,40 @@
+<?php
+echo "<html><body bgcolor=LIGHTCYAN>";
+	echo "<table width=100%  BORDER=1 bgcolor=Lightblue>
+	<TR><TD align=center rowspan=2><img src=rvce.JPG height=100 width=100></TD>
+	<tr><td align=center valign=top>Rashtreeya Sikshana Samithi Trust<BR>
+	<b>R.V.COLLEGE OF ENGINEERING</b><BR>(Autonomous Institution Affiliated to VTU, Belgaum)<BR>
+	Approved by All India Council for Technical Education, New Delhi
+	<br>R.V.Vidyanikethan Post, Mysore Road, BANGALORE-560059
+	</td><td>Phone:080-67178020/21<br>080-67178026/8164<br>Fax:080-28600337<br>Website:www.rvce.edu.in<br>Email ID: principal@rvce.edu.in
+	</td></TR>
+	<tr><td colspan=2 align=center ><h3><b>Software to Measure Course Outcome - CIE</b></h3></td><td><b>Date:$date1<br>User name:$uname  Role:$role </b></td></tr></table>";
+
+echo'<form action="checkbyusn.php" method="post" enctype="multipart/form-data">
+		<table border="0" align="center">
+    	<tr>
+			<td>USN</td>
+			<td align="center"><input type="text" name="usn" size="30"></td>
+		</tr>
+		<tr>
+
+	<td align="center" height="50">
+		<select name="subject">
+	        <option value="" selected="selected">--SELECT LAB--</option>
+            <option VALUE="all"> all</option>
+	        <option VALUE="12IS63"> PIC</option>
+	        <option VALUE="12IS64"> Data Structures</option>
+	        <option VALUE="UNIX"> Unix</option>
+	        <option VALUE="System Software"> System Software</option>
+	    </select>
+	</td>
+</tr>
+    	
+		
+    	<tr>
+			<td colspan="2" align="center"><input type="submit" value="Upload"></td>
+		</tr>
+    	</table>
+	
+	</form>';
+?>

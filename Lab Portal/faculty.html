@@ -1,0 +1,177 @@
+   <html>
+   <head>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=#50, initial-scale=1">
+   	<style>
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button2{
+	position: absolute;
+	top:74%;
+	border-radius: 12px;
+	left:45%;
+}
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);} 	
+
+	.panel-heading {
+    padding: 5px 50px;
+}
+
+.panel-footer {
+	padding: 1px 15px;
+	color: #A0A0A0;
+}
+img{
+-webkit-transition: -webkit-transform .8s ease-in-out;
+transition: transform .8s ease-in-out;
+}
+img:hover{
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+.img-circle{
+	position: absolute;
+	top: 3%;
+	left :0%;
+}
+.profile-img {
+	width: 96px;
+	height: 96px;
+	margin: 0 auto 10px;
+	display: block;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.photo{
+	background-image:url("https://i.ytimg.com/vi/5Y1GpL768Sk/maxresdefault.jpg");
+}
+        </style>
+   
+       <script type='text/javascript'>
+function onSubmitCheck()
+{
+	if(document.forms['form1']['uname'].value =='')
+	{
+		alert('User name is mandatory');
+		document.forms['form1']['uname'].focus();	
+		return false;
+	}	
+	if(document.forms['form1']['pword'].value =='')
+	{
+		alert('Password is mandatory');
+		document.forms['form1']['pword'].focus();	
+		return false;
+	}
+	return true;
+}
+ </script>
+</head>
+   	
+   <body class="photo" >
+
+   	<div style="background:white; height:200px;"> <span text-align="center">
+	<h4 align="center" style="font-family:calibri">Rashtreeya Sikshana Samithi Trust</h4>
+	<h2 align="center"style="color:slategray;font-family:calibri;"><strong>R V College of Engineering</strong></h2>
+	<p align="center" style="font-family:calibri">Autonomous Institution under Visvesvaraya Technological University, Belagavi
+	<br>Approved By AICTE, New Delhi, Accredited By NBA, New Delhi
+	<br>R V Vidyanikethan Post, Mysore Road, Bengaluru-560059</p>
+	<h2 align="center" style="color:slategray;font-family:calibri"><strong>Lab Portal</strong></h2></span></div>
+	<br>
+	<marquee style="font-family:calibri;font-size:25px;">Department of Information Science and Engineering</marquee>
+	<br><br>
+	<span style="position:absolute;top:0%;left:85%;"><br>Phone:080-67178020/21<br>080-67178026/8164<br>Fax:080-28600337<br>Website:www.rvce.edu.in<br>Email ID: principal@rvce.edu.in</span></div>
+	  <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/RVCE_New_Logo.JPG" class="img-circle" alt="Cinque Terre" width="150" height="150"> 
+
+    <div class="container" style="margin-top:20px; opacity:0.8;">
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-md-offset-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<strong > Student details</strong>
+					</div>
+					<div class="panel-body">
+						<form role="form" name="form1" action="faculty_verify1.php" method="post" onsubmit="return onSubmitCheck();" >
+							<fieldset>
+								<div class="row">
+									
+									<div class="center-block">
+										<img class="profile-img"
+											src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg" alt="">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12 col-md-10  col-md-offset-1 ">
+										<div class="form-group">
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="glyphicon glyphicon-user"></i>
+												</span> 
+												<input class="form-control" placeholder="Faculty ID" name="uname" type="text" autofocus>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="glyphicon glyphicon-lock"></i>
+												</span>
+												<input class="form-control" placeholder="Password" name="pword" type="password" value="">
+											</div>
+										</div>
+										<div class="form-group">
+											<input type="submit" class="btn btn-lg btn-primary btn-block" value="Submit">
+											<br><br><br>
+											
+										</div>
+										
+									</div>
+									
+								</div>
+							
+							</fieldset>
+							
+						</form>
+						
+					</div>
+					</div>
+                </div>
+			
+			</div>
+			
+		</div>
+	
+		<br><br><br>
+<div class="container" style="margin-top:20px; opacity:0.8;">
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-md-offset-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+											<h3 align="center">DEVELOPERS</h3>
+											<h4 align="center">Abhishek S</h4>
+											<h4 align="center">Manjunath B</h4>
+											<h4 align="center">Aniruddha K Rao</h4>
+											<h4 align="center">Aniketh Wattamwar</h4>
+	</div></div></div></div></div>
+		
+	</div>
+
+
+</body>
+</html>
